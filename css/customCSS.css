@@ -72,3 +72,7 @@ body {
 .container{
   transition: opacity 2.5s cubic-bezier(0.02, -0.04, 0.48, 1.06) 0s;
 }
+nav{
+  transition: opacity 2.5s cubic-bezier(0.02, -0.04, 0.48, 1.06) 0s;
+  opacity: 0;
+}

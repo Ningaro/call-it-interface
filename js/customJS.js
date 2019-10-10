@@ -1,9 +1,15 @@
 function workSpace() {
   $("#botaBegin").html(`Готово`);
   $(".container").css("opacity", "0");
-  $("body").css({"display": "flex",
+  $("body").css({"display": "block",
   "align-items": "center"});
-  $("body").html();
+  $("body").html(`<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+</nav>`);
+$("nav").css("opacity", "1");
 }
 $("#logBtn").on("click", function() {
   if (($("#login").val() == "") && ($("#password").val() == "")) {
