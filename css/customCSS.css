@@ -1,0 +1,71 @@
+/* Размещение по центру */
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+form {
+  margin: auto;
+}
+
+/* Отступы */
+input {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* Цветовая схема
+    #DBD8CB - фон
+    #D6C680 - кнопки нажатые
+    #C6B463 - кнопки не нажатые
+    + Белый
+    + Черный - текст
+*/
+
+/* Цвета кнопок */
+.btn-primary {
+  background-color: #C6B463;
+  border-color: #C6B463;
+}
+.btn-primary:hover {
+  background-color: #D6C680;
+  border-color: #D6C680;
+}
+.btn-primary:active {
+  background-color: #C6B463!important;
+  border-color: #C6B463!important;
+}
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(214, 198, 128, 1);
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(214, 198, 128, 1);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #D6C680;
+  border-color: #D6C680;
+}
+
+/* Цвета формочек при выеделение */
+.form-control:focus{
+  border-color: #C6B463;
+  box-shadow: 0 0 0 0.2rem rgba(214, 198, 128, 1);
+}
+
+/* Цвет фона сайта */
+body {
+  background-color: #DBD8CB;
+}
+
+/* Всякое */
+.invalid-feedback{
+  display: block!important;
+  opacity: 0;
+  text-align: center;
+}
+#botaBegin{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
