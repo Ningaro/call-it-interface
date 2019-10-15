@@ -2,15 +2,9 @@
 html {
   height: 100%;
 }
-body {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
 form {
   margin: auto;
 }
-
 /* Отступы */
 input {
   margin-top: 2%;
@@ -56,7 +50,7 @@ input {
 }
 
 /* Цвет фона сайта */
-body {
+.logBody {
   background-color: #DBD8CB;
 }
 
@@ -72,7 +66,8 @@ body {
 .container{
   transition: opacity 2.5s cubic-bezier(0.02, -0.04, 0.48, 1.06) 0s;
 }
-nav{
-  transition: opacity 2.5s cubic-bezier(0.02, -0.04, 0.48, 1.06) 0s;
-  opacity: 0;
+.logBody {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }

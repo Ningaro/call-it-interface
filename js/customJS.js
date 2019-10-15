@@ -1,24 +1,32 @@
+function navBar() {
+    $("body").css({
+      "display": "block",
+      "align-items": "center"
+    });
+    $("body").html(``);
+  //$("nav").css("opacity", "1");
+  setTimeout($("nav").css("opacity", "1"), 3000)
+}
 function workSpace() {
   $("#botaBegin").html(`Готово`);
   $(".container").css("opacity", "0");
-  $("body").css({"display": "block",
-  "align-items": "center"});
-  $("body").html(`<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
-  </a>
-</nav>`);
-$("nav").css("opacity", "1");
+  setTimeout(navBar, 2500)
 }
-$("#logBtn").on("click", function() {
+function auth() {
   if (($("#login").val() == "") && ($("#password").val() == "")) {
-    console.log('123');
   } else {
     if (($("#login").val() == "admin") && ($("#password").val() == "admin")) {
       document.location.href = "index.html";
     } else $(".invalid-feedback").css("opacity", "1");
   }
+}
+$("#logBtn").on("click", function() {
+  auth()
+});
+$(document).on('keypress',function(e) {
+    if(e.which == 13) {
+        auth()
+    }
 });
 $("#botaBegin").on("click", function() {
   $("#botaBegin").prop('disabled', true);
