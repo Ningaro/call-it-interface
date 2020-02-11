@@ -71,3 +71,6 @@ input {
   align-items: center;
   height: 100%;
 }
+.navbarTop{
+  box-shadow: 0 0 5px 0px #00000080;
+}
